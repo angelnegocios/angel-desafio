@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Espacio Sideral</title>
+</head>
+<body>
+    <table cellspacing="0" cellpading="0">
+        <tr class="header_p">
+            <td>
+                <span class="some_text">Una página web de Marrtin NotCo</span>
+                <h1 class="header_1">Espacio Sideral</h1>
+            </td>
+            <td>
+                <img class="astro" src="./images/casco.png" alt="casco">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>¡Bienvenido!</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Gracias por registrarte en Espacio Sideral, tu cuenta ha sido creada con éxito.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Para activar tu cuenta, por favor haz click en el siguiente enlace:</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="{{ url('user/verify', $user->token) }}">Confirmar mi cuenta</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>¡Gracias!</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
